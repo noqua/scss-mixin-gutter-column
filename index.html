@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>scss-mixin-gutter-column</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<section>
+	<h1>specify class name</h1>
+	<p>default class name is <mark>.item</mark></p>
+	<pre>// &#64;include col(columns, gutter width, 'class or element');
+
+&#64;include col(4, 30px, '.child');</pre>
+	<div class="container sample-1">
+		<div class="child">.child</div>
+		<div class="child">.child</div>
+		<div class="child">.child</div>
+		<div class="child">.child</div>
+
+		<div class="child">.child</div>
+		<div class="child">.child</div>
+	</div><!-- /.container sample-1 -->
+</section>
+
+<section>
+	<h1>Flexbox</h1>
+	<pre>&#64;include col(3, 30px, $is-type:flex);
+// OR
+&#64;include col(3, 30px);</pre>
+	<div class="container is-flexbox">
+		<div class="item">flexbox item</div>
+		<div class="item">flexbox item</div>
+		<div class="item">flexbox item</div>
+		<div class="item">flexbox item</div>
+		<div class="item">flexbox item</div>
+	</div><!-- /.container is-flexbox -->
+</section>
+
+<section>
+	<h1>CSS Grid</h1>
+	<pre>&#64;include col(3, 30px, $is-type:grid);</pre>
+	<div class="container is-grid">
+		<div class="item">grid column</div>
+		<div class="item">grid column</div>
+		<div class="item">grid column</div>
+		<div class="item">grid column</div>
+		<div class="item">grid column</div>
+	</div><!-- /.container is-grid -->
+</section>
+
+<section>
+	<h1>Float</h1>
+	<pre>&#64;include col(3, 30px, $is-type:float);</pre>
+	<div class="container is-float">
+		<div class="item">float : left;</div>
+		<div class="item">float : left;</div>
+		<div class="item">float : left;</div>
+		<div class="item">float : left;</div>
+		<div class="item">float : left;</div>
+	</div><!-- /.container is-float -->
+</section>
+
+<section>
+	<h1>ul/ol</h1>
+	<p>set argument <mark>$is-list : true</mark></p>
+	<pre>&#64;include col(3, 30px, $is-list:true);</pre>
+	<ul class="container is-list">
+		<li>li</li>
+		<li>li</li>
+		<li>li</li>
+		<li>li</li>
+		<li>li</li>
+	</ul><!-- /.container is-list -->
+</section>
+
+</body>
+</html>
