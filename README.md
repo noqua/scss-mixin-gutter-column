@@ -72,7 +72,7 @@ include ```col()``` mixin in container element and set some arguments.
 }
 ```
 
-<img src="grid/images/sample-1.png" alt="sample" title="sample" width="655">
+<img src="https://github.com/noqua/scss-mixin-gutter-column/blob/image/image/sample-1.png" alt="sample" title="sample" width="609">
 
 ※上下marginはmixinには含まれませんので、必要に応じて個別で設定してください。<br>
 
