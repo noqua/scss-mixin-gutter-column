@@ -5,28 +5,36 @@ scss-mixin-gutter-column is mixin of columns that margin width can be freely adj
 
 # 使い方/Usage
 
+Mixinをインクルードしてください。<br>
+include mixin file.
+
+```
+@import 'mixin-gutter-column';
+```
+
+
 包括要素内で```col()```mixinをインクルードし、カラム数やカラム要素のclass名などを指定します。<br>
 include ```col()``` mixin in container element and set some arguments.
 
 ```
 /*
 @include col(
-	number of column, // *required
-	gutter margin, // *required
-	class name,
-	display type(flex/float/grid),
-	is list(true/false)
+	number of column, // *required ex) 3
+	gutter margin, // *required ex) 30px
+	class name, // ex) '.child'
+	display type(flex/float/grid), // ex) flex
+	is list(true/false) // ex) false
 ) {
 	other styles
 }
 */
 
 @include col(
-	カラム数,	// *必須 (例) 3
-	カラム間margin幅,	// *必須 (例) 30px
-	カラムのセレクタ,	// (例) '.child'
-	CSSのタイプ(flex/float/grid),	// (例) flex
-	リストか否か(true/false)	// (例) false
+	カラム数,	 // *必須 例) 3
+	カラム間margin幅, // *必須 例) 30px
+	カラムのセレクタ, // 例) '.child'
+	CSSのタイプ(flex/float/grid), // 例) flex
+	リストか否か(true/false) // 例) false
 ) {
 	その他のスタイル
 }
@@ -66,4 +74,7 @@ include ```col()``` mixin in container element and set some arguments.
 
 <img src="grid/images/sample-1.png" alt="sample" title="sample" width="655">
 
-※上下marginはmixinには含まれませんので、必要に応じて個別で設定してください。
+※上下marginはmixinには含まれませんので、必要に応じて個別で設定してください。<br>
+
+その他の使い方例は```index.html```でご確認ください。<br>
+check```index.html```for more examples.
