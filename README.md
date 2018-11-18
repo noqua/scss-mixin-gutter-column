@@ -1,20 +1,17 @@
 # scss-mixin-gutter-column
 
-レスポンシブ対応。カラム数とカラム間marginを自由に設定するMixin。<br>
-scss-mixin-gutter-column is mixin of columns that margin width can be freely adjusted.
+レスポンシブ対応。カラム数とカラム間marginを自由に設定するMixin。
 
 # 使い方/Usage
 
-Mixinをインクルードしてください。<br>
-include mixin file.
+Mixinをインクルードしてください。
 
 ```
 @import 'mixin-gutter-column';
 ```
 
 
-包括要素内で```col()```mixinをインクルードし、カラム数やカラム要素のclass名などを指定します。<br>
-include ```col()``` mixin in container element and set some arguments.
+包括要素内で```col()```mixinをインクルードし、カラム数やカラム要素のclass名などを指定します。
 
 ```
 /*
@@ -76,5 +73,4 @@ include ```col()``` mixin in container element and set some arguments.
 
 ※上下marginはmixinには含まれませんので、必要に応じて個別で設定してください。<br>
 
-その他の使い方例は```index.html```でご確認ください。<br>
-check```index.html```for more examples.
+その他の使い方例は```index.html```でご確認ください。
